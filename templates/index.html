@@ -1,84 +1,90 @@
 <!DOCTYPE html>
+
 <head lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <meta content="description" name="description">
+        <meta name="google" content="notranslate" />
+        <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x250" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
 
-  <title>Traffic Fault Detection</title>
+        <link rel="apple-touch-icon" sizes="180x250" href="./static/assets/apple-icon-180x180.png">
+        <link href="./static/assets/favicon.ico" rel="icon">
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
-<script>
-    function submit(j) {
-<!--    document.write(j)-->
-        if (j == 1){
-            pic = "{{ url_for('showcase', vid="video1") }}";
-        }
-        else if (j == 2) {
-            pic = "{{ url_for('showcase', vid="video2") }}";
-        }
-        else if (j == 3){
-            pic = "{{ url_for('showcase', vid="video3") }}";
-        }
-        else if (j == 4){
-            pic = "{{ url_for('showcase', vid="video4") }}";
-        }
-    
-    document.getElementById("image").src=pic;
-    }
-</script>
-  <style>
-  .center{
-  display:block;
-  margin-left:auto ;
-  margin-right:auto;
-  text-align:center
-  }
-  </style>
-  <style>
-    body, h3 {
- background-color: #000000;
- font-size: large;
- color: #FFFFFF;
-}
+        <title>Traffic Fault Detection</title>
 
-.center, button {
-    margin-top: 20px;
-}
-button {
-    color: #000000;
-    padding: 15px;
-    border-radius: 15px;
-}
+        <link href="./static/main.3f6952e4.css" rel="stylesheet">
+    </head>
+    <script>
+        function submit(j) {
+< !--document.write(j)-->
+        if (j == 1) {
+                pic = "{{ url_for('showcase', vid="video1") }}";
+            }
+            else if (j == 2) {
+                pic = "{{ url_for('showcase', vid="video2") }}";
+            }
+            else if (j == 3) {
+                pic = "{{ url_for('showcase', vid="video3") }}";
+            }
+            else if (j == 4) {
+                pic = "{{ url_for('showcase', vid="video4") }}";
+            }
+
+            document.getElementById("image").src = pic;
+        }
+    </script>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center
+        }
+    </style>
+    <style>
+        body,
+        h3 {
+            background-color: #000000;
+            font-size: large;
+            color: #FFFFFF;
+        }
+
+        .center,
+        button {
+            margin-top: 20px;
+        }
+
+        button {
+            color: #000000;
+            padding: 15px;
+            border-radius: 15px;
+        }
     </style>
 </head>
 
 <body>
-<div class = "center">
-<h3>Traffic Fault Detection</h3></div>
-<img class="center"  width="900" height="500"   src = ".\static\assets\image.jpg" id="image">
-<br>
-
-<div class="center">
-    <b>Helmet detection</b> -- <b>Signal Breaker Detection   </b> -- <b>License Plate Detection</b>
+    <div class="center">
+        <h3>Traffic Fault Detection</h3>
+    </div>
+    <img class="center" width="900" height="500" src=".\static\assets\image.jpg" id="image">
     <br>
-    <button id="submit" value="helmet" type="submit" onclick="submit(1)"> <b>Vid 1</b> </button>
-    <button id="submit" value="helmet" type="submit" onclick="submit(2)"> <b>Vid 2</b> </button>
-    <button id="submit" value="helmet" type="submit" onclick="submit(3)"> <b>Vid 3</b> </button>
-    <button id="submit" value="helmet" type="submit" onclick="submit(4)"> <b>Vid 4</b> </button>
-</div>
-<br>
+
+    <div class="center">
+        <b>Helmet detection</b> -- <b>Signal Breaker Detection </b> -- <b>License Plate Detection</b>
+        <br>
+        <button id="submit" value="helmet" type="submit" onclick="submit(1)"> <b>Vid 1</b> </button>
+        <button id="submit" value="helmet" type="submit" onclick="submit(2)"> <b>Vid 2</b> </button>
+        <button id="submit" value="helmet" type="submit" onclick="submit(3)"> <b>Vid 3</b> </button>
+        <button id="submit" value="helmet" type="submit" onclick="submit(4)"> <b>Vid 4</b> </button>
+    </div>
+    <br>
 
 </body>
-</html>
 
+</html>
